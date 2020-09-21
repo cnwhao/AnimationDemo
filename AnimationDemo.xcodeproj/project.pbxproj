@@ -17,6 +17,7 @@
 		2BF97CC725188E8C003D6CFE /* AnimationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CC625188E8C003D6CFE /* AnimationDemoUITests.swift */; };
 		2BF97CDA25188F64003D6CFE /* MusicEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CD825188F64003D6CFE /* MusicEffectView.swift */; };
 		2BF97CDB25188F64003D6CFE /* MusicEffectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CD925188F64003D6CFE /* MusicEffectController.swift */; };
+		2BF97CE4251892C2003D6CFE /* musiceffect.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BF97CE3251892C2003D6CFE /* musiceffect.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2BF97CC825188E8C003D6CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF97CD825188F64003D6CFE /* MusicEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicEffectView.swift; sourceTree = "<group>"; };
 		2BF97CD925188F64003D6CFE /* MusicEffectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicEffectController.swift; sourceTree = "<group>"; };
+		2BF97CE3251892C2003D6CFE /* musiceffect.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = musiceffect.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		2BF97CA325188E89003D6CFE /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BF97CE2251892AF003D6CFE /* Resources */,
 				2BF97CD725188F64003D6CFE /* EffectiveView */,
 				2BF97CD925188F64003D6CFE /* MusicEffectController.swift */,
 				2BF97CA425188E89003D6CFE /* AppDelegate.swift */,
@@ -140,6 +143,14 @@
 				2BF97CD825188F64003D6CFE /* MusicEffectView.swift */,
 			);
 			path = EffectiveView;
+			sourceTree = "<group>";
+		};
+		2BF97CE2251892AF003D6CFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BF97CE3251892C2003D6CFE /* musiceffect.gif */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BF97CB125188E8B003D6CFE /* LaunchScreen.storyboard in Resources */,
+				2BF97CE4251892C2003D6CFE /* musiceffect.gif in Resources */,
 				2BF97CAE25188E8B003D6CFE /* Assets.xcassets in Resources */,
 				2BF97CAC25188E89003D6CFE /* Main.storyboard in Resources */,
 			);
