@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6601F32519CFA10043FC53 /* ActivityIndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6601F22519CFA10043FC53 /* ActivityIndicatorLayer.swift */; };
+		2B6601F82519E4880043FC53 /* pulsatoreffect.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B6601F72519E4870043FC53 /* pulsatoreffect.gif */; };
 		2BF97CA525188E89003D6CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CA425188E89003D6CFE /* AppDelegate.swift */; };
 		2BF97CA725188E89003D6CFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CA625188E89003D6CFE /* SceneDelegate.swift */; };
 		2BF97CA925188E89003D6CFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CA825188E89003D6CFE /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 		2BF97CDA25188F64003D6CFE /* MusicEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CD825188F64003D6CFE /* MusicEffectView.swift */; };
 		2BF97CDB25188F64003D6CFE /* MusicEffectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CD925188F64003D6CFE /* MusicEffectController.swift */; };
 		2BF97CE4251892C2003D6CFE /* musiceffect.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BF97CE3251892C2003D6CFE /* musiceffect.gif */; };
+		2BF97CF12518AF6D003D6CFE /* RippleEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CF02518AF6D003D6CFE /* RippleEffectViewController.swift */; };
+		2BF97CFB2518B526003D6CFE /* PulsatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF97CFA2518B526003D6CFE /* PulsatorLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B6601F22519CFA10043FC53 /* ActivityIndicatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorLayer.swift; sourceTree = "<group>"; };
+		2B6601F72519E4870043FC53 /* pulsatoreffect.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pulsatoreffect.gif; sourceTree = "<group>"; };
 		2BF97CA125188E89003D6CFE /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF97CA425188E89003D6CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BF97CA625188E89003D6CFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,8 @@
 		2BF97CD825188F64003D6CFE /* MusicEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicEffectView.swift; sourceTree = "<group>"; };
 		2BF97CD925188F64003D6CFE /* MusicEffectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicEffectController.swift; sourceTree = "<group>"; };
 		2BF97CE3251892C2003D6CFE /* musiceffect.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = musiceffect.gif; sourceTree = "<group>"; };
+		2BF97CF02518AF6D003D6CFE /* RippleEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffectViewController.swift; sourceTree = "<group>"; };
+		2BF97CFA2518B526003D6CFE /* PulsatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatorLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +113,14 @@
 		2BF97CA325188E89003D6CFE /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BF97CF92518B4F7003D6CFE /* EffectiveLayer */,
 				2BF97CE2251892AF003D6CFE /* Resources */,
 				2BF97CD725188F64003D6CFE /* EffectiveView */,
-				2BF97CD925188F64003D6CFE /* MusicEffectController.swift */,
 				2BF97CA425188E89003D6CFE /* AppDelegate.swift */,
 				2BF97CA625188E89003D6CFE /* SceneDelegate.swift */,
 				2BF97CA825188E89003D6CFE /* ViewController.swift */,
+				2BF97CD925188F64003D6CFE /* MusicEffectController.swift */,
+				2BF97CF02518AF6D003D6CFE /* RippleEffectViewController.swift */,
 				2BF97CAA25188E89003D6CFE /* Main.storyboard */,
 				2BF97CAD25188E8B003D6CFE /* Assets.xcassets */,
 				2BF97CAF25188E8B003D6CFE /* LaunchScreen.storyboard */,
@@ -148,9 +158,19 @@
 		2BF97CE2251892AF003D6CFE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B6601F72519E4870043FC53 /* pulsatoreffect.gif */,
 				2BF97CE3251892C2003D6CFE /* musiceffect.gif */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BF97CF92518B4F7003D6CFE /* EffectiveLayer */ = {
+			isa = PBXGroup;
+			children = (
+				2BF97CFA2518B526003D6CFE /* PulsatorLayer.swift */,
+				2B6601F22519CFA10043FC53 /* ActivityIndicatorLayer.swift */,
+			);
+			path = EffectiveLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BF97CB125188E8B003D6CFE /* LaunchScreen.storyboard in Resources */,
+				2B6601F82519E4880043FC53 /* pulsatoreffect.gif in Resources */,
 				2BF97CE4251892C2003D6CFE /* musiceffect.gif in Resources */,
 				2BF97CAE25188E8B003D6CFE /* Assets.xcassets in Resources */,
 				2BF97CAC25188E89003D6CFE /* Main.storyboard in Resources */,
@@ -286,8 +307,11 @@
 			files = (
 				2BF97CA925188E89003D6CFE /* ViewController.swift in Sources */,
 				2BF97CDA25188F64003D6CFE /* MusicEffectView.swift in Sources */,
+				2BF97CF12518AF6D003D6CFE /* RippleEffectViewController.swift in Sources */,
 				2BF97CDB25188F64003D6CFE /* MusicEffectController.swift in Sources */,
+				2B6601F32519CFA10043FC53 /* ActivityIndicatorLayer.swift in Sources */,
 				2BF97CA525188E89003D6CFE /* AppDelegate.swift in Sources */,
+				2BF97CFB2518B526003D6CFE /* PulsatorLayer.swift in Sources */,
 				2BF97CA725188E89003D6CFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

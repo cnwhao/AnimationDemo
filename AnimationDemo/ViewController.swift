@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private let cellIdentify = "ViewController_UITableViewCell"
-    private let dataArray = ["音乐振动条"]
+    private let dataArray = ["音乐振动条", "波纹-活动指示器"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,7 +39,12 @@ extension ViewController:UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
             let vc = MusicEffectController()
             self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 1 {
+            let vc = RippleEffectViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        
     }
 }
 
